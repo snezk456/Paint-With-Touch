@@ -7,6 +7,8 @@ canvas = document.getElementById("myCanvas");
 ctx = canvas.getContext("2d");
 color = "black";
 width = "1";
+width1 = "";
+height = "";
 
 canvas.addEventListener("mousedown", my_mousedown);
 function my_mousedown(e)
@@ -26,11 +28,11 @@ function my_mouseleave(e)
 {
     mouseEvent = "mouseleave";
 }
-width = screen.width;
-new_width = screen.width - 70;
+width1 = screen.width1;
+new_width = screen.width1 - 70;
 new_height = screen.height - 300;
-if(width<990) {
-    document.getElementById("myCanvas").width=new_width;
+if(width1<990) {
+    document.getElementById("myCanvas").width1=new_width;
     document.getElementById("myCanvas").height=new_height;
     document.body.style.overflow="hidden";
 }
